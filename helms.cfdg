@@ -1,0 +1,39 @@
+startshape helms
+CF::Background = [b -1]
+
+shape helms {
+
+    mcircle [b 1]
+    arms [b 1]
+
+}
+
+shape arms {
+
+    loop 8 [ r 45 ] mcircle [ trans 15 z -1 ]
+    loop 8 [ r 45 ] arm []
+
+}
+
+shape arm {
+
+    SQUARE [ trans 0.5 s 15 0.5 ]
+    SQUARE [ trans 4.5 s 4 b -1 ]
+    bars []
+
+}
+
+shape bars {
+
+    SQUARE [ s 0.5 3 trans 18 ]
+    SQUARE [ s 0.5 3 trans 15 ]
+    SQUARE [ s 0.5 3 trans 12 ]
+
+}
+
+shape mcircle {
+
+    CIRCLE [ s 6 ]
+    CIRCLE [ s 5  b -1 ]
+
+}
